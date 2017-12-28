@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>丽江</title>
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/unslider.min.js"></script>
+
+    <style>
+
+        body { text-align: center }
+
+        ul, ol { padding: 0;}
+
+        .banner { position: relative; overflow: auto; text-align: center;}
+
+        .banner li { list-style: none; }
+
+        .banner ul li { float: left; }
+
+        #b04 { width: 100%;}
+
+        #b04 .arrow { position: absolute; top: 200px;}
+
+        #b04 #al { left: 30px;}
+
+        #b04 #ar { right: 30px;}
+
+    </style>
+
+</head>
+
+<body>
+<audio src="assets/audio/1.mp3" autoplay loop></audio>
+<div class="banner" id="b04">
+
+    <ul>
+
+        <li><img  src="assets/images/lj/1.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/2.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/3.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/4.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/5.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/6.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/7.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/8.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/9.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/10.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/11.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/12.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/13.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/14.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/15.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/16.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/17.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/18.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/19.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/20.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/21.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/22.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/23.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/24.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/25.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/26.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/27.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/28.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/29.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/30.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/31.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/lj/32.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/lj/33.jpg" alt="" width="85%"  height="800"></li>
+
+    </ul>
+
+    <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="assets/images/arrowl.png" alt="prev" width="20" height="35"></a>
+
+    <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="assets/images/arrowr.png" alt="next" width="20" height="37"></a>
+
+
+</div>
+<h2>丽江</h2>
+<p>
+    大研古城
+</p>
+
+
+</body>
+
+<script>
+
+    $(document).ready(function(e) {
+
+        var unslider04 = $('#b04').unslider({
+
+                dots: false,
+                fluid:true
+
+            }),
+
+            data04 = unslider04.data('unslider');
+
+
+
+        $('.unslider-arrow04').click(function() {
+
+            var fn = this.className.split(' ')[1];
+
+            data04[fn]();
+
+        });
+
+    });
+
+</script>
+
+
+
+
+</html>

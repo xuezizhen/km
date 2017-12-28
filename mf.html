@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>木府</title>
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/unslider.min.js"></script>
+
+    <style>
+
+        body { text-align: center }
+
+        ul, ol { padding: 0;}
+
+        .banner { position: relative; overflow: auto; text-align: center;}
+
+        .banner li { list-style: none; }
+
+        .banner ul li { float: left; }
+
+        #b04 { width: 100%;}
+
+        #b04 .arrow { position: absolute; top: 200px;}
+
+        #b04 #al { left: 30px;}
+
+        #b04 #ar { right: 30px;}
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="banner" id="b04">
+
+    <ul>
+
+        <li><img  src="assets/images/mf/1.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/mf/2.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/3.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/4.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/5.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/6.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/mf/7.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/8.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/9.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/10.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/11.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/mf/12.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/13.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/14.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/15.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/16.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/mf/17.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/18.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/19.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/20.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/mf/21.jpg" alt="" width="85%" height="800" ></li>
+
+        <li><img  src="assets/images/mf/22.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/23.jpg" alt="" width="85%"  height="800"></li>
+
+        <li><img  src="assets/images/mf/24.jpg" alt="" width="85%"  height="800"></li>
+
+
+    </ul>
+
+    <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="assets/images/arrowl.png" alt="prev" width="20" height="35"></a>
+
+    <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="assets/images/arrowr.png" alt="next" width="20" height="37"></a>
+
+
+</div>
+<h2>木府</h2>
+<p>
+    王爷府
+</p>
+
+<audio src="assets/audio/1.mp3" autoplay loop></audio>
+</body>
+
+<script>
+
+    $(document).ready(function(e) {
+
+        var unslider04 = $('#b04').unslider({
+
+                dots: false,
+                fluid:true
+
+            }),
+
+            data04 = unslider04.data('unslider');
+
+
+
+        $('.unslider-arrow04').click(function() {
+
+            var fn = this.className.split(' ')[1];
+
+            data04[fn]();
+
+        });
+
+    });
+
+</script>
+
+
+
+
+</html>
